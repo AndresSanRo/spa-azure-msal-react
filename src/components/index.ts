@@ -1,3 +1,3 @@
 export * from './App'
-export * from './SignInButton'
+export * from './SignInOutButton'
 export * from './NavBar'
