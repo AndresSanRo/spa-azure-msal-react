@@ -2,6 +2,7 @@ import { AccountInfo } from "@azure/msal-browser";
 import { useIsAuthenticated } from "@azure/msal-react";
 import { msalInstance } from "../../services/msal/msalConfig";
 import { SignInOutButton } from "../SignInOutButton"
+import './UserArea.css'
 
 const getUserName = (): string => {
     const myAccounts: AccountInfo[] = msalInstance.getAllAccounts();
@@ -11,5 +12,5 @@ const getUserName = (): string => {
 export const UserArea: React.FC = () => {
     const isAuthenticated = useIsAuthenticated();
 
-    return <div>{isAuthenticated ? getUserName() : <></>}<SignInOutButton /></div>
+    return <div className="userArea"><div>{isAuthenticated ? <span>{getUserName()}</span> : <></>}<SignInOutButton /></div></div>
 }

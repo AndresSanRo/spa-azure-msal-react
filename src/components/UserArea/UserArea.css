@@ -1,0 +1,10 @@
+.userArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.userArea > div > span{
+    margin-right: 10px;
+}

@@ -1,3 +1,10 @@
 .SignInOutButton {
-    margin: 10px;
+    background-color: #292E36;
+    color: #ADBAC7;
+    border-color: #ADBAC7
+}
+
+.SignInOutButton:hover {    
+    background-color: #768390;    
+    border-color: #ADBAC7;
 }
