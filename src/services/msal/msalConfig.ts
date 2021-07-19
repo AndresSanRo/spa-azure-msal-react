@@ -1,7 +1,7 @@
 export const msalConfig = {
   auth: {
     clientId: "950b996b-61ce-4ad3-942d-148765ba7f3f",
-    authority: "0d661cb7-86bb-4456-aa93-dae4f732d40b",
+    authority: "https://login.microsoftonline.com/0d661cb7-86bb-4456-aa93-dae4f732d40b",
     redirectUri: "http://localhost:3000",
   },
   cache: {
@@ -15,5 +15,5 @@ export const loginRequest = {
 };
 
 export const graphConfig = {
-    graphMeEndpoint: "https://graph.microsoft.com/v1.0/me"
+    graphMeEndpoint: "https://graph.microsoft.com"
 };
