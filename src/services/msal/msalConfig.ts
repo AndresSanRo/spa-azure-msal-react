@@ -1,3 +1,5 @@
+import { PublicClientApplication } from "@azure/msal-browser";
+
 export const msalConfig = {
   auth: {
     clientId: "950b996b-61ce-4ad3-942d-148765ba7f3f",
@@ -17,3 +19,6 @@ export const loginRequest = {
 export const graphConfig = {
     graphMeEndpoint: "https://graph.microsoft.com"
 };
+
+
+export const msalInstance = new PublicClientApplication(msalConfig);
